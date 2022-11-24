@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.9em;}
+h3{ font-size: 2.2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color: blueviolet;
+}
+button:hover{
+    background-color: rgb(92, 21, 158);
+}
+
+.container{
+max-width: 1400px;
+margin: auto;
+}
+
+header{
+    background-color: rgb(240,240,240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 40px 15px;
+    font-weight: bold;
+    font-size: 1em;
+    background-image: url(../Resources/img/logotino.png);
+    background-repeat: no-repeat;
+    background-size: 35.5%;
+    background-position:center;
+    padding-top: 27%;
+    align-self: center center;
+
+    width:"30";
+    height:"30"; 
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blueviolet;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url(../Resources/img/Nahuelito_Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somoscosturas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-cursos{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+}
+#nuestros-cursos .container{
+  padding: 100px 0px;  
+}
+#nuestros-cursos h2{
+    margin: 0;
+}
+#nuestros-cursos p{
+    display: none;
+}
+
+#nuestros-cursos .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url(../Resources/img/Fieltro.jpg);
+    
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url(../Resources/img/Perrito_y_Gatito.jpg);
+    
+}
+
+#contactenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height: 80vh;
+
+}
+
+#contactenos a{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:white;
+    background-color: blueviolet;
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(230,230,230);
+    margin: 0;
+}
+footer p{
+    color: rgb(100,100,100);
+    font-size: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+footer .container{
+height: 100px;
+}
+footer a{
+    display: flex;
+    justify-content:center;
+}
+/*versión computadora*/
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin: 0;
+        padding-left: 2%;
+       
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;       
+        
+    }
+    header .logo{
+        padding: 35px 20px;
+        background-position: left center;
+        padding-top: 2.5%;
+        padding-left: 7%;
+        background-size: 28%;
+ 
+       
+    }
+
+    #somoscosturas .container{
+    display: flex;
+    justify-content: space-evenly;
+    
+    }  
+    #somoscosturas .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }  
+
+    #somoscosturas .img-container{
+    display: flex;
+    background-image: url(../Resources/img/Quinessoy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 400px;
+    }
+
+#nuestros-cursos .cursos{
+    display: flex;
+    justify-content: center;
+}
+
+#nuestros-cursos p{
+    display: block;
+    margin-bottom: 30px;
+}
+#nuestros-cursos .carta{
+    padding: 15px;
+}
+
+footer a{
+    display:inline;
+}
+footer .container{
+    padding: 20px;
+}
+}

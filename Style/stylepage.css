@@ -1,0 +1,10 @@
+form {
+padding: 35px;
+background-color: beige;
+color: lightslategray;
+width: 300px;
+}
+.form-control {
+    width: 220px;
+    height: 45px;
+}
